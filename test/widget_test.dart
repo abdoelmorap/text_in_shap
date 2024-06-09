@@ -7,13 +7,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:text_in_shap/TextInShap/drawer_shapes.dart';
 
-import 'package:text_in_shap/main.dart';
+import 'package:text_in_shap/text_shape.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(
+    MaterialApp(
+      home: Scaffold(
+        body: TextShape(text: "text", type: DrawerShapes.UpWave, textStyle: TextStyle()),
+      ),));
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);

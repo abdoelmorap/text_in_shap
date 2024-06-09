@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:text_in_shap/TextInShap/text_in_shape.dart';
 
-import 'drawer_shapes.dart';
 
 class TextShape extends Widget{
 

@@ -1,5 +1,5 @@
 abstract class DrawerShapes{
-  static const UpWave="up_wave_sh";
+  static var UpWave="up_wave_sh";
   static const DownWave="dwn_wave_sh";
   static const Triangle="Triangle";
   static const Diamond="Diamond";

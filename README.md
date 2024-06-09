@@ -1,16 +1,14 @@
 # text_in_shap
 
-A new Flutter project.
+How To Use Me You Can Just Call Widget Text Shape And Boom But And Text You Want To Your Shape.
 
 ## Getting Started
+Just Call Widget And Add You Customized Attributes
 
-This project is a starting point for a Flutter application.
+TextShape(text,type,letterSpacing,size
+strokeWidth,    textStyle,shapeColor );
 
-A few resources to get you started if this is your first Flutter project:
+Result Will Be
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Nice Shape With Text Like This
+![Screenshot_20240609_055005](https://github.com/abdoelmorap/text_in_shap/assets/51962828/8f31315b-9058-4b09-8cff-21ccdc4b6387)
