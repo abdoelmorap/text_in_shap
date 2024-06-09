@@ -8,6 +8,13 @@ import 'package:text_in_shap/text_shape.dart';
 
 
 ## Getting Started
+Add To your yaml File 
+text_in_shap: ^0.1.1+1
+Then  
+Import 
+import 'package:text_in_shap/TextInShap/drawer_shapes.dart';
+import 'package:text_in_shap/text_shape.dart';
+
 Just Call Widget And Add You Customized Attributes
 
 TextShape(text,type,letterSpacing,size
