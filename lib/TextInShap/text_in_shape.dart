@@ -6,7 +6,7 @@ class TextInShape extends CustomPainter {
 
 
   bool showPath=true;
-  final shapeColor;
+  final Color shapeColor;
   bool autoSpacing=false;
   bool isClosed=false;
   final  String type;
@@ -28,18 +28,18 @@ class TextInShape extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     if (showPath) {
-      canvas.drawPath(shapesGen(radius: this.size).createPath(type), Paint()
+      canvas.drawPath(ShapesGenrator(radius: this.size).createPath(type), Paint()
         ..color =  shapeColor
         ..strokeWidth = strokeWidth
         ..style = PaintingStyle.stroke);
     }
 
     if (textOrPattern) {
-      canvas.drawOnPath(shapesGen(radius: this.size).createPath(type), _drawAtElement, spacing: letterSpacing == 0 ? 70 : letterSpacing);
+      canvas.drawOnPath(ShapesGenrator(radius: this.size).createPath(type), _drawAtElement, spacing: letterSpacing == 0 ? 70 : letterSpacing);
     } else {
       canvas.drawTextOnPath(
         text,
-        shapesGen(radius: this.size).createPath(type),
+        ShapesGenrator(radius: this.size).createPath(type),
         textStyle: textStyle,
         autoSpacing: autoSpacing,
         isClosed: isClosed,
@@ -51,8 +51,8 @@ class TextInShape extends CustomPainter {
   }
 
   void _drawAtElement(int index, Canvas canvas, Offset position) {
-    final patternPosition = index % 3;
-    final paint = Paint()
+
+     Paint()
       ..color = Colors.grey
       ..strokeWidth = 2.0
       ..style = PaintingStyle.stroke;

@@ -3,13 +3,13 @@ import 'dart:ui';
 
 import 'package:text_in_shap/TextInShap/drawer_shapes.dart';
 
- class shapesGen{
+ class ShapesGenrator{
   double radians(double degree) {
     return degree * pi / 180;
   }
 
 
-  shapesGen({ this.radius = 200,
+  ShapesGenrator({ this.radius = 200,
   this.center = Offset.zero,
   this.angle = 0});
 
@@ -127,43 +127,30 @@ import 'package:text_in_shap/TextInShap/drawer_shapes.dart';
       switch (type) {
         case DrawerShapes.Triangle:
           return   drawPolygon(3, initialAngle: 30);
-          break;
         case DrawerShapes.Diamond:
           return   drawPolygon(4, initialAngle: 0);
-          break;
         case DrawerShapes.Pentagon:
           return   drawPolygon(5, initialAngle: -18);
-          break;
         case DrawerShapes.Hexagon:
           return   drawPolygon(6, initialAngle: 30);
-          break;
         case DrawerShapes.Octagon:
           return   drawPolygon(8, initialAngle: 30);
-          break;
         case DrawerShapes.Decagon:
           return   drawPolygon(10, initialAngle: 30);
-          break;
         case DrawerShapes.Dodecagon:
           return   drawPolygon(12, initialAngle: 30);
-          break;
         case DrawerShapes.Heart:
           return  drawHeart();
-          break;
         case DrawerShapes.Star5:
           return drawStar(10, initialAngle: 15);
-          break;
         case DrawerShapes.Star6:
           return  drawStar(12, initialAngle: 0);
-          break;
         case DrawerShapes.Star7:
           return drawStar(14, initialAngle: 0);
-          break;
         case DrawerShapes.Star8:
           return     drawStar(16, initialAngle: 0);
-          break;
         default:
           return Path();
-          break;
       }
     }
 
