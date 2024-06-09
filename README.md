@@ -2,11 +2,20 @@
 
 How To Use Me You Can Just Call Widget Text Shape And Boom But And Text You Want To Your Shape.
 
+Import 
+import 'package:text_in_shap/TextInShap/drawer_shapes.dart';
+import 'package:text_in_shap/text_shape.dart';
+
+
 ## Getting Started
 Just Call Widget And Add You Customized Attributes
 
 TextShape(text,type,letterSpacing,size
 strokeWidth,    textStyle,shapeColor );
+Example 
+
+TextShape(text: "text", type: DrawerShapes.DownWave, textStyle: TextStyle()),
+
 
 Result Will Be 
 
