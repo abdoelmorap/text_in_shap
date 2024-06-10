@@ -1,6 +1,6 @@
 name: text_in_shap
-description: "Package To Put Text Inside Shape"
-homepage: "https://github.com/abdoelmorap/text_in_shap"
+description: "Package To Put Text Inside Shape which can use it to put some text inside shape you want like heart ,wave ,etc ..."
+homepage: "https://github.com/abdoelmorap/text_in_shap.git"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 
@@ -16,7 +16,7 @@ homepage: "https://github.com/abdoelmorap/text_in_shap"
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 0.1.2+2
+version: 0.1.3+3
 
 environment:
   sdk: '>=3.4.1 <4.0.0'

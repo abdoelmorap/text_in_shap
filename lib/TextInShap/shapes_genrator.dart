@@ -42,7 +42,7 @@ import 'package:text_in_shap/TextInShap/drawer_shapes.dart';
       return path;
     }else if(type=="dwn_wave_sh"){
       var path = Path();
-      var size = Size(400, 0);
+      var size = const Size(400, 0);
       var secondStart = Offset(size.width/7, size.height - 105);
       //third point of quadratic bezier curve
       var secondEnd = Offset(size.width/3, size.height - 10);
@@ -121,33 +121,33 @@ import 'package:text_in_shap/TextInShap/drawer_shapes.dart';
     return path;
   }
    Path createPath(String type){
-    if(type==DrawerShapes.UpWave || type==DrawerShapes.DownWave){
+    if(type==DrawerShapes.upWave || type==DrawerShapes.downWave){
      return createWavePath(type);
     }else{
       switch (type) {
-        case DrawerShapes.Triangle:
+        case DrawerShapes.triangle:
           return   drawPolygon(3, initialAngle: 30);
-        case DrawerShapes.Diamond:
+        case DrawerShapes.diamond:
           return   drawPolygon(4, initialAngle: 0);
-        case DrawerShapes.Pentagon:
+        case DrawerShapes.pentagon:
           return   drawPolygon(5, initialAngle: -18);
-        case DrawerShapes.Hexagon:
+        case DrawerShapes.hexagon:
           return   drawPolygon(6, initialAngle: 30);
-        case DrawerShapes.Octagon:
+        case DrawerShapes.octagon:
           return   drawPolygon(8, initialAngle: 30);
-        case DrawerShapes.Decagon:
+        case DrawerShapes.decagon:
           return   drawPolygon(10, initialAngle: 30);
-        case DrawerShapes.Dodecagon:
+        case DrawerShapes.dodecagon:
           return   drawPolygon(12, initialAngle: 30);
-        case DrawerShapes.Heart:
+        case DrawerShapes.heart:
           return  drawHeart();
-        case DrawerShapes.Star5:
+        case DrawerShapes.star5:
           return drawStar(10, initialAngle: 15);
-        case DrawerShapes.Star6:
+        case DrawerShapes.star6:
           return  drawStar(12, initialAngle: 0);
-        case DrawerShapes.Star7:
+        case DrawerShapes.star7:
           return drawStar(14, initialAngle: 0);
-        case DrawerShapes.Star8:
+        case DrawerShapes.star8:
           return     drawStar(16, initialAngle: 0);
         default:
           return Path();

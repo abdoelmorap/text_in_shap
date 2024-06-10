@@ -17,7 +17,7 @@ void main() {
     await tester.pumpWidget(
     MaterialApp(
       home: Scaffold(
-        body: TextShape(text: "text", type: DrawerShapes.UpWave, textStyle: TextStyle()),
+        body: TextShape(text: "text", type: DrawerShapes.upWave, textStyle: TextStyle()),
       ),));
 
     // Verify that our counter starts at 0.

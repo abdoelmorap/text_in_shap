@@ -15,15 +15,14 @@ class TextShape extends Widget{
   final double strokeWidth;
   final TextStyle textStyle;
 
-  bool textOrPattern=false;
-  TextShape({super.key, required this.text, required this.type,this.letterSpacing=1.5,this.size=200,
+  const TextShape({super.key, required this.text, required this.type,this.letterSpacing=1.5,this.size=200,
     this.strokeWidth=34,
 
     required this.textStyle,this.shapeColor=Colors.grey} );
   
   @override
   Element createElement() {
-   return StatelessElement(Container(child: CustomPaint(
+   return StatelessElement(Container(margin: EdgeInsets.zero,child: CustomPaint(
        painter: TextInShape(   text:   text,type:  type,letterSpacing:letterSpacing,size:size,
            strokeWidth:  strokeWidth,
 

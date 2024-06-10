@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
             title: Text(widget.title),
       ),
       body: Center(
-          child: TextShape(text: "I love You", type: DrawerShapes.Heart, textStyle: TextStyle(fontSize: 30,color: Colors.pink)),
+          child: TextShape(text: "I love You", type: DrawerShapes.Heart, textStyle: const TextStyle(fontSize: 30,color: Colors.pink)),
       ),
     // This trailing comma makes auto-formatting nicer for build methods.
     );
