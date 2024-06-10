@@ -7,7 +7,7 @@ How To Use "text_in_shap" You Can Just Call Widget Text Shape And Boom put  Text
 Add To your pubspec.yaml File
 
 
-     text_in_shap: ^0.1.1+1  
+     text_in_shap: <Current Version>
 
 Then
 
